@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Events: Bubbling & capture</title>
+    <link rel="stylesheet" type="text/css" href="index-style.css">
+
+  </head>
+
+  <body>
+
+    <article>
+      <h1>Bubbling and capturing example</h1>
+
+      <p>Here's some code that I'm proposing as an update to <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#other_event_concepts">MDN's Introduction to events</a> tutorial.</p>
+
+      <p>The iframe below contains the original code (as accessed on the 24th of November 2021). Note that the bubbling stage events for the window and the HTML document always remain displayed in the log section after the "clear output" button is clicked.</p>
+      <iframe src="bubbling-and-capturing-original.html" width="500px" height="400px"></iframe>
+
+      <p>Here's an updated version with <code>evt.stopPropagation()</code> added to the <code>clearOutput()</code> function. This means that no messages are left in the log section after the "clear output" button is clicked.</p>
+      <iframe src="bubbling-and-capturing-updated.html" width="500px" height="400px"></iframe>
+
+      <p>I have also added some string formatting code to the <code>gphase()</code> function to remove the square brackets and "object" from the log text.</p>
+      <p>See the <a href="README.md">readme</a> file in this repo for more information.</p>
+    </article>
+  </body>
+
+</html>
