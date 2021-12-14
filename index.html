@@ -12,15 +12,23 @@
     <article>
       <h1>Bubbling and capturing example</h1>
 
-      <p>Here's some code that I'm proposing as an update to <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#other_event_concepts">MDN's Introduction to events</a> tutorial.</p>
+      <p>Here's some code that I proposed as an update to <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#other_event_concepts">MDN's Introduction to events</a> tutorial.</p>
+      <p>UPDATE: My suggestions were accepted and merged with the MDN tutorial on the 25th of November 2021. See <a href="https://github.com/mdn/content/pull/10775">my pull request</a> for more details.</p>
 
-      <p>The iframe below contains the original code (as accessed on the 24th of November 2021). Note that the bubbling stage events for the window and the HTML document always remain displayed in the log section after the "clear output" button is clicked.</p>
+      <p>The iframe below contains the original version of the code example from the tutorial (accessed on the 24th of November 2021). The example contains five nested <code>&ltdiv&gt</code> elements, which run some JavaScript code that reports bubbling and capturing events when one of the elements is clicked. The button runs a function that clears the text output, but the bubbling stage events for the window and the HTML document remain displayed in the log section after this button is clicked.</p>
       <iframe src="bubbling-and-capturing-original.html" width="500px" height="400px"></iframe>
 
-      <p>Here's an updated version with <code>evt.stopPropagation()</code> added to the <code>clearOutput()</code> function. This means that no messages are left in the log section after the "clear output" button is clicked.</p>
+      <p>Here's the original JavaScript code:</p>
+      <iframe src="bubbling-and-capturing-original.js" width="500px" height="600px"></iframe>
+
+      <p>I created an updated version with <code>evt.stopPropagation()</code> added to the <code>clearOutput()</code> function. This means that no messages are left in the log section after the "clear output" button is clicked. This version is displayed in the iframe below:</p>
       <iframe src="bubbling-and-capturing-updated.html" width="500px" height="400px"></iframe>
 
-      <p>I have also added some string formatting code to the <code>gphase()</code> function to remove the square brackets and "object" from the log text.</p>
+      <p>I also added some string formatting code to the <code>gphase()</code> function to remove the square brackets and "object" from the log text.</p>
+
+      <p>Here's my updated version of the JavaScript code:</p>
+      <iframe src="bubbling-and-capturing-updated.js" width="500px" height="600px"></iframe>
+
       <p>See the <a href="README.md">readme</a> file in this repo for more information.</p>
     </article>
   </body>
